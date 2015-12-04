@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>智能社-http://www.zhinengshe.com</title>
+<style>
+body{ background:#000;}
+#c1{ background:#fff;}
+
+</style>
+<script>
+window.onload=function(){
+	var oC=document.getElementById('c1');	
+	var gd=oC.getContext('2d');
+	
+	var linear=gd.createLinearGradient(600,300,200,300);
+	
+	linear.addColorStop(0,'red');
+	linear.addColorStop(0.5,'yellow');
+	linear.addColorStop(1,'blue')
+	
+	gd.fillStyle=linear;
+	gd.fillRect(0,0,oC.width,oC.height);
+};
+</script>
+</head>
+
+<body>
+<canvas id="c1" width="800" height="600"></canvas>
+</body>
+</html>
